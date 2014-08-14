@@ -265,5 +265,9 @@ operator) <>:
 Полное описание всех возможных способов запуска perl есть в документации
 [perlrun][perlrun].
 
+## Дополнительная литература
+
+ * [Презентация Александра Сапожникова про однострочники](http://shoorick.ru/slide/perlburg/oneliner.html)
+
  [butterfly_operator]: https://metacpan.org/pod/perlsecret#Eskimo-greeting
  [perlrun]: http://perldoc.perl.org/perlrun.html
