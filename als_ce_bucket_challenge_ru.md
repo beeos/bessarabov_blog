@@ -9,6 +9,12 @@ lateral sclerosis][als], вылить на себя ведро ледяной в
 
 Вот некоторые известные люди, кто принял участие в этом испытании.
 
+## Satya Nadella — 2014-08-14
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/3YDxB6hXWYc" frameborder="0" allowfullscreen></iframe>
+
+Сатья назвал Jeff Bezos, Larry Page
+
 ## Mark Zuckerberg — 2014-08-14
 
 [![Mark Zuckerberg on ALS Ice Bucket Challenge][mz_img]][mz]
@@ -29,6 +35,14 @@ Franti.
 
 Билл назвал Elon Musk, Chris Anderson из TED и неизветсного мне Ryan Seacrest.
 
+## Jeff Bezos — 2014-08-16
+
+[![Jeff Bezos on ALS Ice Bucket Challenge][jb_img]][jb]
+
+Джеф назвал William Shatner, Patrick Stewart и George Takei
+
  [als]: http://www.alsa.org/
  [mz_img]: https://upload.bessarabov.ru/bessarabov/yGG58WPfJH7aktWzagyNX-DCXGM.png
  [mz]: https://www.facebook.com/photo.php?v=10101586925575221
+ [jb_img]: https://upload.bessarabov.ru/bessarabov/Y5kfU82mutos9KAtyB3omkOcUow.png
+ [jb]: https://www.facebook.com/photo.php?v=10152399604608124
