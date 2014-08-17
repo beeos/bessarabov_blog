@@ -63,5 +63,9 @@ div сначала будут применены правила из class_1, а
 они и будут применены в таком порядке. Но [этого не происходит][j2] текст
 отображется синим цветом с размером 1em.
 
+Задал вопрос на [stackoverflow][so].
+
+
 [j1]: http://jsfiddle.net/bessarabov/s581mv5a/
 [j2]: http://jsfiddle.net/bessarabov/qesL1sj9/
+[so]: http://stackoverflow.com/questions/25347440/why-does-the-order-of-css-selectors-matter
