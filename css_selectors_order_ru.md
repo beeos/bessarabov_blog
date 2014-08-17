@@ -63,9 +63,29 @@ div сначала будут применены правила из class_1, а
 они и будут применены в таком порядке. Но [этого не происходит][j2] текст
 отображется синим цветом с размером 1em.
 
-Задал вопрос на [stackoverflow][so].
+## Ответ
 
+Задал вопрос на [stackoverflow][so]. На so и в [твиттере][t] мне объяснили в
+чем дело.
+
+Порядок классов в html class="class_1 class_2" ни на что не влияет. Но порядок
+селекторов в styles.css важен, так как селекторы применются в том порядке
+как они записаны (про это написано, например на сайте [htmlbook][hb]).
+
+Одно из решений — это увеличить вес важного правила ([jsfiddle][j3]):
+
+    .class_2 {
+        font-size: 2em !important;
+    }
+
+    .class_1 {
+        font-size: 1em;
+        color: blue;
+    }
 
 [j1]: http://jsfiddle.net/bessarabov/s581mv5a/
 [j2]: http://jsfiddle.net/bessarabov/qesL1sj9/
+[j3]: http://jsfiddle.net/bessarabov/zgxk5apf/
 [so]: http://stackoverflow.com/questions/25347440/why-does-the-order-of-css-selectors-matter
+[hb]: http://htmlbook.ru/samcss/kaskadirovanie
+[t]: https://twitter.com/bessarabov/status/500912646234046464
