@@ -71,15 +71,15 @@ Franti.
 
 ## Jim Parsons — Шелдон из Теории большого взрыва
 
-<iframe src="https://instagram.com/p/rzyRwSGI5I/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+[https://instagram.com/p/rzyRwSGI5I/](https://instagram.com/p/rzyRwSGI5I/)
 
 ## Mayim Bialik — Эми Фара Фаулер из Теории большого взрыва
 
-<iframe src="https://instagram.com/p/r3Dky2qBhA/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+[https://instagram.com/p/r3Dky2qBhA/](https://instagram.com/p/r3Dky2qBhA/)
 
 ## Kaley Cuoco-Sweeting — Пенни из Теории большого взрыва
 
-<iframe src="https://instagram.com/p/r0RMrpOWSc/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+[https://instagram.com/p/r0RMrpOWSc/](https://instagram.com/p/r0RMrpOWSc/)
 
  [als]: http://www.alsa.org/
  [mz_img]: https://upload.bessarabov.ru/bessarabov/yGG58WPfJH7aktWzagyNX-DCXGM.png
