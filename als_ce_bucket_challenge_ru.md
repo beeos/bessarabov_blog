@@ -65,7 +65,7 @@ Franti.
  * его сын Elias
  * Chris Hemsworth (актер играющий Тора)
 
-## Elon Musk
+## Elon Musk — 2014-08-16
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/Retn7RDjYiw?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -80,6 +80,26 @@ Franti.
 ## Kaley Cuoco-Sweeting — Пенни из Теории большого взрыва
 
 [https://instagram.com/p/r0RMrpOWSc/](https://instagram.com/p/r0RMrpOWSc/)
+
+## Chris Pratt — 2014-08-17
+
+<iframe width="560" height="420" src="//www.youtube.com/embed/im2Uz3MTtmo" frameborder="0" allowfullscreen></iframe>
+
+## Chris Hemsworth — 2014-08-18
+
+<iframe width="560" height="420" src="//www.youtube.com/embed/xJwhGZOn8Ow" frameborder="0" allowfullscreen></iframe>
+
+## Benedict Cumberbatch — 2014-08-22
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/YOa7ZjxRuKM" frameborder="0" allowfullscreen></iframe>
+
+## Patrick Stewart — 2014-08-22
+
+http://www.youtube.com/watch?v=wkO4NIqAMss
+
+## Samsung Galaxy S5 — 2014-08-22
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/6w4Gqt-ljb4" frameborder="0" allowfullscreen></iframe>
 
  [als]: http://www.alsa.org/
  [mz_img]: https://upload.bessarabov.ru/bessarabov/yGG58WPfJH7aktWzagyNX-DCXGM.png
