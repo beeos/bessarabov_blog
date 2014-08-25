@@ -95,7 +95,7 @@ Franti.
 
 ## Patrick Stewart — 2014-08-22
 
-http://www.youtube.com/watch?v=wkO4NIqAMss
+[https://www.youtube.com/watch?v=wkO4NIqAMss](https://www.youtube.com/watch?v=wkO4NIqAMss)
 
 ## Samsung Galaxy S5 — 2014-08-22
 
