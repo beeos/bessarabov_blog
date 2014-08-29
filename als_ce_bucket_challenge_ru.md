@@ -101,6 +101,10 @@ Franti.
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/6w4Gqt-ljb4" frameborder="0" allowfullscreen></iframe>
 
+## Homer Simpsons — 2014-08-26
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/kYNPtDbykp0" frameborder="0" allowfullscreen></iframe>
+
  [als]: http://www.alsa.org/
  [mz_img]: https://upload.bessarabov.ru/bessarabov/yGG58WPfJH7aktWzagyNX-DCXGM.png
  [mz]: https://www.facebook.com/photo.php?v=10101586925575221
