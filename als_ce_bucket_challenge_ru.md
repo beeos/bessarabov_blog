@@ -105,6 +105,10 @@ Franti.
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/kYNPtDbykp0" frameborder="0" allowfullscreen></iframe>
 
+## Масяня — 2014-09-01
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/bI7DTKWvAl4?rel=0" frameborder="0" allowfullscreen></iframe>
+
  [als]: http://www.alsa.org/
  [mz_img]: https://upload.bessarabov.ru/bessarabov/yGG58WPfJH7aktWzagyNX-DCXGM.png
  [mz]: https://www.facebook.com/photo.php?v=10101586925575221
