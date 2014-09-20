@@ -232,4 +232,3 @@ Perl модулей.
  [ac]: https://github.com/bessarabov/App-Comparator
  [gh]: https://github.com/bessarabov/perl_choose_retry_module
  [i]: https://upload.bessarabov.ru/bessarabov/zoU4Eyllq9i-wnV4I7EaWH8zSn0.png
-
