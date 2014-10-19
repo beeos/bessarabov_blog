@@ -28,6 +28,10 @@ date_time: 2014-10-19 01:22:45 MSK
     REPOSITORY          TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
     ubuntu              14.04               9cbaf023786c        4 days ago          192.8 MB
 
+    # Просмотр информации об образе
+    # Пример вывода — https://gist.github.com/bessarabov/4afa32c1ff3c958d4a9f
+    docker inspect bessarabov/sample_nginx
+
     # Удалить образ ubuntu:latest (так же можно удалять используя IMAGE ID)
     docker rmi ubuntu
 
