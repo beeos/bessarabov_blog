@@ -39,6 +39,13 @@ date_time: 2014-10-19 01:22:45 MSK
     # Эта команда создаст образ bessarabov/sample_nginx с тегом latest
     docker build --tag bessarabov/sample_nginx .
 
+    # Создать новый тег на основе уще существующего образа
+    $ docker tag bessarabov/sample_nginx:latest 192.168.59.103:5000/bessarabov/sample_nginx:latest
+    $ docker images
+    REPOSITORY                                    TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
+    bessarabov/sample_nginx                       latest              b2d112ab861d        18 hours ago        231.6 MB
+    192.168.59.103:5000/bessarabov/sample_nginx   latest              b2d112ab861d        18 hours ago        231.6 MB
+
 ## Работа с контейнерами
 
     # Запустить контенейр в интерактивном режиме
