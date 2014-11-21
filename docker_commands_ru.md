@@ -90,3 +90,18 @@ date_time: 2014-10-19 01:22:45 MSK
     # После того как контейнер остановлен его можно удать (и он больше не
     # будет показываться в `docker ps -a`:
     docker rm sample
+
+## Автокомлит для команды docker на Mac OS X
+
+[Обсуждение на stackoverflow](http://stackoverflow.com/questions/26132451/how-to-add-bash-command-completion-for-docker-on-mac-os-x).
+
+    brew update
+    brew install bash-completion
+    curl -GET https://raw.githubusercontent.com/docker/docker/master/contrib/completion/bash/docker > `brew --prefix`/etc/bash_completion.d/docker
+
+И в .bash_profile втсавить:
+
+    # http://superuser.com/questions/819221/how-to-install-the-debian-bash-completion-using-homebrew
+    if [ -f `brew --prefix`/etc/bash_completion ]; then
+        . `brew --prefix`/etc/bash_completion
+    fi
