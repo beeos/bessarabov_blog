@@ -43,7 +43,7 @@ Perl я создаю JSON c тремя пробелами, комичу этот
     my $coder = JSON::PP
         ->new
         ->pretty
-        ->sort_by(sub { $JSON::PP::a cmp $JSON::PP::b })
+        ->canonical
         ->indent_length(4)
         ;
 
