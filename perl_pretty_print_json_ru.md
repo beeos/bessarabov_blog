@@ -40,14 +40,17 @@ Perl я создаю JSON c тремя пробелами, комичу этот
 [JSON::PP](https://metacpan.org/pod/JSON::PP) и использовать его вот таким
 образом:
 
-    my $coder = JSON::PP
+    use JSON::PP qw();
+
+    my $json_coder = JSON::PP
         ->new
         ->pretty
         ->canonical
         ->indent_length(4)
         ;
 
-    say $coder->encode( $bar );
+    my $pretty_json = $json_coder->encode($data);
+    say $pretty_json;
 
 Вот [полный текст скрипта-примера](https://gist.github.com/bessarabov/c18a7aa18c39d27cfde4).
 
