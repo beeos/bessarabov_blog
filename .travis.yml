@@ -1,5 +1,8 @@
 language: perl
-install: cpanm --notest Test::Whitespaces
+install: cpanm --notest \
+    File::Slurp \
+    Test::Whitespaces \
+    Text::Markdown
 script: prove --verbose t/
 perl:
   - "5.22"
