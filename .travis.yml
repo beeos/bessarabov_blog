@@ -1,5 +1,5 @@
 language: perl
 install: cpanm --notest Test::Whitespaces
-script: prove -v t
+script: prove --verbose t/
 perl:
   - "5.22"
