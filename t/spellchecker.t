@@ -13,6 +13,7 @@ use JSON::PP;
 use Text::Markdown qw(markdown);
 
 my @IGNORE = qw(
+    CPAN
     EOM
     PSGI
     subj
@@ -131,17 +132,13 @@ sub main_in_test {
         permitted_speed_ru.md
         php_was_not_written_in_perl_ru.md
         python_oneliner_to_start_webserver_ru.md
-        rfc_2119_ru.md
         show_time_ru.md
-        sri_lanka_agitation_posters_ru.md
         stopwatch_console_script_ru.md
         temporary_work_directory_ru.md
         the_magellanic_cloud_quotation_ru.md
         time_recording_ru.md
         tverskaya_experiment_ru.md
         view_data_structure_diff_ru.md
-        vision_conditions_ru.md
-        what_is_eom_in_email_subject_ru.md
         why_every_site_should_use_https_ru.md
         why_google_dont_promote_driverless_car_in_car_racing_ru.md
         wireless_headset_for_iphone_ru.md
