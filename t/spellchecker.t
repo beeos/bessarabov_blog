@@ -15,10 +15,16 @@ use Text::Markdown qw(markdown);
 my @IGNORE = qw(
     CPAN
     EOM
+    FileBase
+    GitHub
     PSGI
     subj
     ПДД
     баг
+    бекап
+    наэксперементировали
+    суперское
+    файлик
 );
 
 my %IGNORE_HASH = map { $_ => 1 } @IGNORE;
@@ -104,7 +110,6 @@ sub main_in_test {
         docker_compose_guideline_ru.md
         docker_volumes_experiments_ru.md
         drivers_license_test_blank_ru.md
-        empty_desktop_ru.md
         external_links_ru.md
         git_low_level_assemblage_ru.md
         git_svn_ru.md
@@ -137,7 +142,6 @@ sub main_in_test {
         temporary_work_directory_ru.md
         the_magellanic_cloud_quotation_ru.md
         time_recording_ru.md
-        tverskaya_experiment_ru.md
         view_data_structure_diff_ru.md
         why_every_site_should_use_https_ru.md
         why_google_dont_promote_driverless_car_in_car_racing_ru.md
