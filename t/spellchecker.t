@@ -13,23 +13,36 @@ use JSON::PP;
 use Text::Markdown qw(markdown);
 
 my @IGNORE = qw(
+    AngularJS
+    Bezos
+    Brin
     CPAN
     CSRF
+    Cumberbatch
+    Downey
     EOM
+    Elon
     FileBase
     GitHub
+    Hemsworth
     Monit
     Munin
+    Nadella
     Nagios
     PSGI
+    Pratt
+    Satya
     SemVer
+    TODO
     YNAB
     Zabbix
     boot2docker
     jenkins
     linux
     nginx
+    reddit
     subj
+    Масяня
     ПДД
     баг
     бекап
@@ -116,7 +129,6 @@ sub main_in_test {
 
     # TODO - поправить все файлы из этого списка
     my @files_to_ignore = qw(
-        alfa_click_little_big_details_ru.md
         als_ce_bucket_challenge_ru.md
         angularjs_vs_template_toolkit_ru.md
         bret_victor_ru.md
