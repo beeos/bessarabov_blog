@@ -68,6 +68,13 @@ sub remove_code {
     return 1;
 }
 
+sub remove_links {
+
+    $_[0] =~ s{https?://[^\s\[\]\(\)]+}{Link}g;
+
+    return 1;
+}
+
 sub remove_ignore_words {
 
     $_[0] = [
@@ -168,6 +175,7 @@ sub main_in_test {
 
         remove_meta_information($content);
         remove_code($content);
+        remove_links($content);
 
         my $html = markdown($content);
 
