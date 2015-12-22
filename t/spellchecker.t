@@ -14,14 +14,26 @@ use Text::Markdown qw(markdown);
 
 my @IGNORE = qw(
     CPAN
+    CSRF
     EOM
     FileBase
     GitHub
+    Monit
+    Munin
+    Nagios
     PSGI
+    SemVer
+    YNAB
+    Zabbix
+    boot2docker
+    jenkins
+    linux
+    nginx
     subj
     ПДД
     баг
     бекап
+    нажимабельна
     наэксперементировали
     суперское
     файлик
