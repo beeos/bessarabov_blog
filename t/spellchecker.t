@@ -34,20 +34,28 @@ my @IGNORE = qw(
     Satya
     SemVer
     TODO
+    YAPC
     YNAB
     Zabbix
     boot2docker
+    cal
     jenkins
     linux
     nginx
+    printf
     reddit
+    screencast
+    sprintf
     subj
     Масяня
+    Мда
     ПДД
     баг
     бекап
+    гитхаб
     нажимабельна
     наэксперементировали
+    однострочник
     суперское
     файлик
 );
@@ -152,7 +160,6 @@ sub main_in_test {
         'mac_os_perl_versions_ru.md',
         'macbook_keyboard_ru.md',
         'metacpan_likes_ru.md',
-        'metro_text_ru.md',
         'moscow_drivers_license_exam_map_ru.md',
         'moscow_pm_meetings_ru.md',
         'ok_fail_terminology_ru.md',
@@ -168,11 +175,8 @@ sub main_in_test {
         'permitted_speed_ru.md',
         'php_was_not_written_in_perl_ru.md',
         'python_oneliner_to_start_webserver_ru.md',
-        'show_time_ru.md',
-        'stopwatch_console_script_ru.md',
         'temporary_work_directory_ru.md',
         'the_magellanic_cloud_quotation_ru.md',
-        'time_recording_ru.md',
         'view_data_structure_diff_ru.md',
         'why_every_site_should_use_https_ru.md',
         'why_google_dont_promote_driverless_car_in_car_racing_ru.md',
