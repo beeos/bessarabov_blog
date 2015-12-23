@@ -126,6 +126,39 @@ sub get_check_result_from_yandex_speller {
     return $check_result;
 }
 
+sub check_file {
+    my ($file_name) = @_;
+
+    my $content = get_content($file_name);
+
+    remove_meta_information($content);
+    remove_code($content);
+    remove_links($content);
+
+    my $html = markdown($content);
+
+    my $check_result = get_check_result_from_yandex_speller($html);
+
+    remove_ignore_words($check_result);
+
+    if (scalar @{$check_result} == 0) {
+        pass('Speller found no errors in file "' . $file_name . '"');
+    } else {
+        fail('Speller found errors in file "' . $file_name . '"');
+        foreach my $element (@{$check_result}) {
+            note(
+                sprintf(
+                    'Unknown word: "%s". (Suggestions: "%s")',
+                    $element->{word},
+                    join('", "', @{$element->{s}}),
+                )
+            );
+        }
+    }
+
+    return 1;
+}
+
 sub main_in_test {
 
     binmode Test::More->builder->output, ":utf8";
@@ -133,86 +166,66 @@ sub main_in_test {
 
     pass('Loaded ok');
 
-    my @files = <*_ru.md>;
+    my $file_name_from_agrv = $ARGV[0];
 
-    # TODO - поправить все файлы из этого списка
-    my @files_to_ignore = (
-        'als_ce_bucket_challenge_ru.md',
-        'angularjs_vs_template_toolkit_ru.md',
-        'bret_victor_ru.md',
-        'code_complete_recommend_books_ru.md',
-        'cpan_ru.md',
-        'css_selectors_order_ru.md',
-        'curry_monitoring_ru.md',
-        'dailyprogrammer_111_ru.md',
-        'docker_commands_ru.md',
-        'docker_compose_guideline_ru.md',
-        'docker_volumes_experiments_ru.md',
-        'drivers_license_test_blank_ru.md',
-        'external_links_ru.md',
-        'git_low_level_assemblage_ru.md',
-        'git_svn_ru.md',
-        'hill_ru.md',
-        'how_i_pay_for_internet_in_time_ru.md',
-        'how_to_run_swift_playground_ru.md',
-        'hpmor_text_statistics_ru.md',
-        'mac_os_internet_switch_on_off_ru.md',
-        'mac_os_perl_versions_ru.md',
-        'macbook_keyboard_ru.md',
-        'metacpan_likes_ru.md',
-        'moscow_drivers_license_exam_map_ru.md',
-        'moscow_pm_meetings_ru.md',
-        'ok_fail_terminology_ru.md',
-        'perl_boolean_barewords_ru.md',
-        'perl_data_printer_ru.md',
-        'perl_library_moment_get_weekday_number_ru.md',
-        'perl_oneliners_ru.md',
-        'perl_pretty_print_json_ru.md',
-        'perl_printf_sprintf_ru.md',
-        'perl_retry_module_ru.md',
-        'perl_style_guide_ru.md',
-        'perl_unicode_ru.md',
-        'permitted_speed_ru.md',
-        'php_was_not_written_in_perl_ru.md',
-        'python_oneliner_to_start_webserver_ru.md',
-        'temporary_work_directory_ru.md',
-        'the_magellanic_cloud_quotation_ru.md',
-        'view_data_structure_diff_ru.md',
-        'why_every_site_should_use_https_ru.md',
-        'why_google_dont_promote_driverless_car_in_car_racing_ru.md',
-        'wireless_headset_for_iphone_ru.md',
-    );
+    if ($file_name_from_agrv) {
+        check_file($file_name_from_agrv);
+    } else {
+        my @files = <*_ru.md>;
 
-    foreach my $file_name (@files) {
+        # TODO - поправить все файлы из этого списка
+        my @files_to_ignore = (
+            'als_ce_bucket_challenge_ru.md',
+            'angularjs_vs_template_toolkit_ru.md',
+            'bret_victor_ru.md',
+            'code_complete_recommend_books_ru.md',
+            'cpan_ru.md',
+            'css_selectors_order_ru.md',
+            'curry_monitoring_ru.md',
+            'dailyprogrammer_111_ru.md',
+            'docker_commands_ru.md',
+            'docker_compose_guideline_ru.md',
+            'docker_volumes_experiments_ru.md',
+            'drivers_license_test_blank_ru.md',
+            'external_links_ru.md',
+            'git_low_level_assemblage_ru.md',
+            'git_svn_ru.md',
+            'hill_ru.md',
+            'how_i_pay_for_internet_in_time_ru.md',
+            'how_to_run_swift_playground_ru.md',
+            'hpmor_text_statistics_ru.md',
+            'mac_os_internet_switch_on_off_ru.md',
+            'mac_os_perl_versions_ru.md',
+            'macbook_keyboard_ru.md',
+            'metacpan_likes_ru.md',
+            'moscow_drivers_license_exam_map_ru.md',
+            'moscow_pm_meetings_ru.md',
+            'ok_fail_terminology_ru.md',
+            'perl_boolean_barewords_ru.md',
+            'perl_data_printer_ru.md',
+            'perl_library_moment_get_weekday_number_ru.md',
+            'perl_oneliners_ru.md',
+            'perl_pretty_print_json_ru.md',
+            'perl_printf_sprintf_ru.md',
+            'perl_retry_module_ru.md',
+            'perl_style_guide_ru.md',
+            'perl_unicode_ru.md',
+            'permitted_speed_ru.md',
+            'php_was_not_written_in_perl_ru.md',
+            'python_oneliner_to_start_webserver_ru.md',
+            'temporary_work_directory_ru.md',
+            'the_magellanic_cloud_quotation_ru.md',
+            'view_data_structure_diff_ru.md',
+            'why_every_site_should_use_https_ru.md',
+            'why_google_dont_promote_driverless_car_in_car_racing_ru.md',
+            'wireless_headset_for_iphone_ru.md',
+        );
 
-        next if grep { $_ eq $file_name } @files_to_ignore;
-
-        my $content = get_content($file_name);
-
-        remove_meta_information($content);
-        remove_code($content);
-        remove_links($content);
-
-        my $html = markdown($content);
-
-        my $check_result = get_check_result_from_yandex_speller($html);
-
-        remove_ignore_words($check_result);
-
-        if (scalar @{$check_result} == 0) {
-            pass('Speller found no errors in file "' . $file_name . '"');
-        } else {
-            fail('Speller found errors in file "' . $file_name . '"');
-            foreach my $element (@{$check_result}) {
-                note(
-                    sprintf(
-                        'Unknown word: "%s". (Suggestions: "%s")',
-                        $element->{word},
-                        join('", "', @{$element->{s}}),
-                    )
-                );
-            }
+        foreach my $file_name (@files) {
+            next if grep { $_ eq $file_name } @files_to_ignore;
+            check_file($file_name);
         }
+
     }
 
     done_testing();
