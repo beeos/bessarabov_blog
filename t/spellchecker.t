@@ -13,29 +13,42 @@ use JSON::PP;
 use Text::Markdown qw(markdown);
 
 my @IGNORE = qw(
+    3rd
     AngularJS
+    Appleton
+    Beatty
+    Berczuk
     Bezos
     Brin
     CPAN
     CSRF
+    Cem
     Construx
     Cumberbatch
     Downey
     EOM
     Elon
+    Falk
     FileBase
     GitHub
+    Goddard
     Hemsworth
+    Kaner
+    Karl
+    Larman
     McConnell
     Monit
     Munin
     Nadella
     Nagios
+    Nguyen
     PSGI
     Pratt
     Satya
     SemVer
     TODO
+    UML
+    Wiegers
     YAPC
     YNAB
     Zabbix
