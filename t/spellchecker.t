@@ -18,6 +18,7 @@ my @IGNORE = qw(
     Brin
     CPAN
     CSRF
+    Construx
     Cumberbatch
     Downey
     EOM
@@ -25,6 +26,7 @@ my @IGNORE = qw(
     FileBase
     GitHub
     Hemsworth
+    McConnell
     Monit
     Munin
     Nadella
@@ -47,6 +49,7 @@ my @IGNORE = qw(
     screencast
     sprintf
     subj
+    Макконнелла
     Масяня
     Мда
     ПДД
@@ -178,7 +181,6 @@ sub main_in_test {
             'als_ce_bucket_challenge_ru.md',
             'angularjs_vs_template_toolkit_ru.md',
             'bret_victor_ru.md',
-            'code_complete_recommend_books_ru.md',
             'cpan_ru.md',
             'css_selectors_order_ru.md',
             'curry_monitoring_ru.md',
