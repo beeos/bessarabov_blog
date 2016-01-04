@@ -28,6 +28,7 @@ my @IGNORE = qw(
     Downey
     EOM
     Elon
+    Esc
     Falk
     FileBase
     GitHub
